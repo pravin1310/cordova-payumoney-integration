@@ -15,29 +15,9 @@ Visit [cordova-plugin-inappbrowser](https://cordova.apache.org/docs/en/latest/re
     Include payumoneyPaymentGateway.js in your project
     
     <script src="js/payumoneyPaymentGateway.js"></script>
-    Call the following function after click on payment button and provide following data
+    Call the following function after click on payment button
     
-    var postData={
-        surl:surl,
-        furl:furl,
-        productInfo:productInfoInput,
-        amount:amount,
-        customername:name,
-        mobile:mobileNo,
-        email:email,
-        txnid:bookingId,
-        salt:salt,
-        key:key,
-        address:address1,
-        hash:hash,
-        orderid:orderid,
-        deliveryAddress:deliveryAddress,
-        deliveryCustomerName:deliveryCustomerName,
-        deliveryCustomerMobile:deliveryCustomerMobile,
-        deliveryCustomerEmail:deliveryCustomerEmail
-    }
-    
-    payWithPayUMoney(postData);
+    payWithPayUMoney();
     
 
 
