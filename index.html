@@ -12,7 +12,25 @@
 <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
 <!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+<p>Payumoney payment example</p>
+  
+  <a href="javascript:void(0)" class="col button button-raised color-red button-fill" onclick="payWithPayUMoney()" style="display:none">Pay Online</a>
+  <form action="https://secure.payu.in/" method="post" id="myForm" name="payuForm">
+      <input type="hidden" name="key" id="key" value="<KEY>" />  
+      <input type="hidden" name="salt" id="salt" value="<SALT>" />    
+      <input type="hidden" id="productInfo" name="productinfo" value="<PRODUCT INFO>" />
+      <input type="hidden" name="hash" value="<HASH KEY GENERATED FROM SERVER>" id="hash"/>
+      <input type="hidden" id="service_provider" name="service_provider" value="payu_paisa"/>
+      <input type="hidden" id="furl" name="furl" value="<FAILURE URL>" />
+      <input type="hidden" name="surl" value="<SUCCESS URL>" id="surl"/>
+      <input type="hidden" name="phone" value="<CONTACTNO>" id="phone"/>
+      <input type="hidden" name="email" value="<EMAIL ID>" id="email"/>
+      <input type="hidden" name="firstname" value="<CUSTOMER NAME>" id="firstname"/>
+      <input type="hidden" name="amount" value="<AMOUNT>" id="amount"/>
+      <input type="hidden" name="address1" value="<ADDRESS>" id="address1"/>
+      <input type="hidden" name="txnid" value="<TRANSECTION ID>" id="txnid"/>
+  </form>
+  
+  <script type="text/javascript" src="cordova.js"></script>
 </body>
 </html>
